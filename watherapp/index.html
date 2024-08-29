@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wather app</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+</style>
+</head>
+<body>
+    
+    <div class="card">
+        <div class="search">
+            <input type="search" placeholder="choose city " spellcheck="false">
+            <button><img src="./image/search.png" ></button>
+        </div>
+        <div class="error">
+            <p>Invalid city name !</p>
+        </div>
+        <div class="wether">
+            <img src="" class="wether-icon">
+            <h1></h1>
+            <h2 class="city"></h2>
+            <div class="detials">
+                <div class="col">
+                    <img src="./image/humidity.png" >
+                    <p class="humidity">humidity </p>
+                    <p class="humidity-num"> </p>
+                </div>
+                <div class="col">
+                    <img src="./image/wind.png" >
+                    <p class="wind"></p>
+                    <p>wind speed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
