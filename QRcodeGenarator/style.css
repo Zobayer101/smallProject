@@ -1,0 +1,110 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppiens',sans-serif;
+}
+
+.countaner{
+    height: 100vh;
+    width: 100%;
+    background: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.countaner .card{
+    width: 350px;
+    height: auto;
+    background: rgb(254, 255, 255);
+    border: 0;
+    outline: 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: -4px -4px 15px #ffffff2f,5px 5px 15px rgb(0, 0, 0,0.1) ;
+}
+.card p{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: #0a0909;
+    text-align: center;
+}
+.card input{
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    height: 50px;
+    border: 1px solid #494eea;
+    padding: 10px;
+    font-size: 18px;
+    margin: 10px 0 20px;
+    
+}
+.card button{
+    width: 100%;
+    height: 50px;
+    background: #494eea;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 10px 10px rgb(0, 0, 0,0.1);
+    margin: 20px 0;
+    font-weight: 500 ;
+}
+.imgBox{
+   
+    border-radius: 5px;
+    overflow: hidden;
+    width: 200px;
+    max-height: 0;
+    transition: max-height 1s;
+}
+.imgBox img{
+    width: 100%;
+    padding: 10px;
+   
+}
+.imgBox.show-img{
+    max-height: 300px;
+    border: 1px solid #d1d1d1;
+    margin: 10px auto;
+}
+
+.card input.blank{
+   border: 1px solid red;
+   animation: blink .3s linear;
+}
+@keyframes blink {
+    0%{
+        transform: translateX(10px);
+    }
+    20%{
+        transform: translateX(-10px);
+    }
+    30%{
+        transform: translateX(10px);
+    }
+    40%{
+        transform: translateX(-10px);
+    }
+    50%{
+        transform: translateX(10px);
+    }
+    60%{
+        transform: translateX(-10px);
+    }
+    70%{
+        transform: translateX(10px);
+    }
+    80%{
+        transform: translateX(-10px);
+    }
+    90%{
+        transform: translateX(10px);
+    }
+    100%{transform: translateX(0px);}
+}
