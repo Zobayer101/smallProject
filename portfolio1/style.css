@@ -1,0 +1,448 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --light-color: #f3f3f3;
+  --drack-color: #616161;
+  --font-color: #1d1d1d;
+}
+.drack {
+  --light-color: #222;
+  --drack-color: #ffffff;
+  --font-color: #e0dede;
+}
+html{
+
+  scroll-behavior: smooth;
+}
+.countuner {
+  background: var(--light-color);
+}
+.countuner .homeSection {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+.navbar {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 5px 15px rgb(0, 0, 0, 0.5);
+  background: var(--light-color);
+  position: sticky;
+  top: 0;
+  z-index: 11;
+}
+.navbar .list {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.list li {
+  list-style: none;
+  cursor: pointer;
+  font-weight: 500;
+  padding-bottom: 10px;
+  transition: 0.2s ease-in;
+}
+li a{
+  color: #9747ff;
+  text-decoration: none;
+}
+.list li:hover {
+  border-bottom: 2px solid #8e38ff;
+  color: #8e38ff;
+}
+.navbar .logo {
+  height: 100%;
+  width: 100px;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+  transform: scale(1.4);
+}
+.apiarance {
+  height: 100%;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.apiarance i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  cursor: pointer;
+  background: var(--drack-color);
+  color: var(--light-color);
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+.apiarance i:hover {
+  color: #8e38ff;
+  border: 1px solid #8e38ff;
+}
+.content {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+}
+.content .textSection {
+    
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.textSection .middleSec{
+ max-width: 400px;
+  height: 500px;
+  
+}
+.textSection h2 ,p {
+    color: var(--font-color);
+}
+.textSection h1{
+    color: #8e38ff;
+    font-size: 40px;
+}
+.IconBTN {
+    
+    width: 100%;
+    padding: 10px;
+    height: 200px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: last baseline;
+    justify-content: space-evenly;
+}
+.towbtn{
+  width: 100%;
+  
+}
+.towbtn button{
+   padding: 10px;
+   gap: 10px;
+   margin-left: 5px;
+   background: #8e38ff;
+   color: #fff;
+  outline: none;
+  border: 0;
+  border-radius: 5px;
+}
+.fourbtn{
+  width: 300px;
+  height: 60px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.fourbtn i{
+  color: var(--drack-color);
+  font-size: 20px;
+  padding: 10px;
+  background: var(--light-color);
+  border-radius: 50%;
+  box-shadow: 0 0 15px #8e38ff;
+  cursor: pointer;
+}
+.content .imgsection {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+.imgsection img {
+  width: auto;
+  height: 350px;
+}
+
+/* About section */
+.aboutsection{
+  width: 100%;
+  height: 100vh;
+  
+  background: var(--light-color);
+}
+.aboutsection .aboutText{
+  text-align: center;
+  font-size: 20px;
+  color: var(--drack-color);
+  padding: 5px;
+}
+.aboutsection .contentSection{
+  width: 100%;
+  background:var(--light-color);
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.contentSection .hereCard{
+  height: 350px;
+  width: 450px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 1px 3px 15px rgb(0, 0, 0, 0.5);
+}
+.hereCard .IMG{
+ width: 100%;
+}
+.IMG img{
+  height: 100px;
+  object-fit: fill;
+  width: 100px;
+  border-radius: 50%;
+  border: 2px solid #8e38ff;
+  box-shadow: 0 0 15px rgb(0, 0, 0, 0.5);
+}
+.hereCard .BTN{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hereCard .sometext{
+  color: var(--font-color);
+}
+.BTN button{
+  height: 40px;
+  width: 80px;
+  border: 0;
+  outline: 0;
+  background: #8e38ff;
+  border-radius: 5px;
+  color: #fff;
+
+}
+.contentSection .skillSection{
+  height: 350px;
+  width: 500px;
+  padding: 15px;
+  box-shadow: 2px 3px 15px rgb(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+.skillSection .html p{
+  font-weight: 500;
+  margin-top: 10px;
+  color: var(--font-color);
+}
+.skillSection .html .show{
+  width: 100%;
+  height:8px;
+  background: #6d6c6cc0;
+  border-radius: 4px;
+}
+.skillSection .html .show .bar{
+  position: relative;
+
+  height: 8px;
+  background: #8e38ff;
+  border-radius: 4px;
+}
+.show .html{
+  width: 95%;
+}
+.show .react{
+  width: 80%;
+}
+.show .node{
+  width: 90%;
+}
+.show .tailwendcss{
+  width: 70%;
+}
+.show .git{
+  width: 80%;
+}
+.show .mysql{
+  width: 85%;
+}
+.show .python{
+  width: 60%;
+}
+.html .show .bar span{
+  position: absolute;
+  right: -14px;
+  top: -28px;
+  border-radius: 4px;
+  background: #8e38ff;
+  color: #fff;
+  font-size: 13px;
+}
+.project{
+  width: 100%;
+  height: 100vh;
+
+}
+.project .projectText{
+  width: 100%;
+  height: 5%;
+  color: var(--drack-color);
+  text-align: center;
+  font-size: 20px;
+}
+.project .showpice{
+  width: 100%;
+  height: 95%;
+  display: flex;
+  
+  align-items: center;
+  justify-content: space-around;
+
+}
+.showpice .numProject ,.happyClient ,.exprience{
+  width: 300px;
+  height: 250px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgb(0, 0, 0, 0.5);
+}
+.numProject i, .happyClient i, .exprience i{
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8e38ff;
+  font-size: 40px;
+}
+.numProject h2, .happyClient h2, .exprience h2{
+    width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--font-color);
+  font-size: 20px;
+}
+.numProject p, .happyClient p, .exprience p{
+    width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--font-color);
+  font-size: 14px;
+}
+.contact{
+  width: 100%;
+  height: 100vh;
+  background: var(--light-color);
+}
+.contact .contacText{
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  
+}
+.contacText h2,p{
+  color: var(--drack-color);
+}
+.outerbox{
+  height: 90%;
+  width: 100%;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.outerbox .simplebox, .frombox{
+  width: 450px;
+  height: 400px;
+  padding: 3px;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgb(0, 0, 0, 0.5);
+}
+.simplebox{
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  gap: 20px;
+  justify-content: center;
+}
+.simplebox h2, p{
+  color: var(--drack-color);
+}
+
+.frombox .dobleinput{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.dobleinput input{
+  border: 1px solid #8e38ff;
+  outline: none;
+   padding: 5px;
+   font-size: 17px;
+   border-radius: 5px;
+   color: var(--drack-color);
+   background: var(--light-color);
+}
+.frombox .sub{
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #8e38ff;
+  border-radius: 5px;
+  font-size: 17px;
+  color: var(--drack-color);
+  background: var(--light-color);
+}
+.frombox textarea{
+  margin-top: 10px;
+  padding: 5px;
+  border: 1px solid #8e38ff;
+  resize: none;
+  border-radius: 5px;
+  width: 100%;
+  height: 200px;
+  font-size: 17px;
+  outline: none;
+  color: var(--drack-color);
+  background: var(--light-color);
+}
+.frombox .BtN{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.BtN button{
+  padding: 7px;
+  font-size: 16px;
+  outline: none;
+  border: 0;
+  color: #fff;
+  border-radius: 8px;
+  background: #8e38ff;
+  cursor: pointer;
+}
