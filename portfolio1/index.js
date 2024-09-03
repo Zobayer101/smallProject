@@ -17,3 +17,8 @@ let Body = document.querySelector("body");
         }
 });
 
+let BAR = document.querySelector(".Bar");
+BAR.addEventListener("click", () => {
+    document.querySelector(".list").classList.toggle("show");
+    
+})

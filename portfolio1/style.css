@@ -16,8 +16,7 @@
   --drack-color: #ffffff;
   --font-color: #e0dede;
 }
-html{
-
+html {
   scroll-behavior: smooth;
 }
 .countuner {
@@ -40,6 +39,35 @@ html{
   top: 0;
   z-index: 11;
 }
+.Bar i{
+  font-size: 20px;
+  cursor: pointer;
+  color: var(--drack-color);
+  padding: 5px;
+  display: none;
+}
+@media screen and (max-width:700px) {
+  .Bar i{
+    display: block;
+  }
+  .navbar .list {
+    flex-direction: column;
+    order: 1;
+   
+    position: absolute;
+    transform: translate(800px,70px);
+    overflow: hidden;
+  }
+  .list.show{
+    transform: translate(150px,70px);
+  }
+ .list li{
+  background: #aaa7a7;
+  width: 200px;
+  padding: 20px;
+  text-align: center;
+ }
+}
 .navbar .list {
   height: 100%;
   width: 50%;
@@ -54,7 +82,7 @@ html{
   padding-bottom: 10px;
   transition: 0.2s ease-in;
 }
-li a{
+li a {
   color: #9747ff;
   text-decoration: none;
 }
@@ -105,7 +133,6 @@ li a{
   padding: 5px;
 }
 .content .textSection {
-    
   height: 100%;
   width: 50%;
   display: flex;
@@ -113,52 +140,50 @@ li a{
   flex-direction: column;
   justify-content: center;
 }
-.textSection .middleSec{
- max-width: 400px;
+.textSection .middleSec {
+  max-width: 400px;
   height: 500px;
-  
 }
-.textSection h2 ,p {
-    color: var(--font-color);
+.textSection h2,
+p {
+  color: var(--font-color);
 }
-.textSection h1{
-    color: #8e38ff;
-    font-size: 40px;
+.textSection h1 {
+  color: #8e38ff;
+  font-size: 40px;
 }
 .IconBTN {
-    
-    width: 100%;
-    padding: 10px;
-    height: 200px;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: last baseline;
-    justify-content: space-evenly;
-}
-.towbtn{
   width: 100%;
-  
+  padding: 10px;
+  height: 200px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: last baseline;
+  justify-content: space-evenly;
 }
-.towbtn button{
-   padding: 10px;
-   gap: 10px;
-   margin-left: 5px;
-   background: #8e38ff;
-   color: #fff;
+.towbtn {
+  width: 100%;
+}
+.towbtn button {
+  padding: 10px;
+  gap: 10px;
+  margin-left: 5px;
+  background: #8e38ff;
+  color: #fff;
   outline: none;
   border: 0;
   border-radius: 5px;
 }
-.fourbtn{
+.fourbtn {
   width: 300px;
   height: 60px;
-  
+
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-.fourbtn i{
+.fourbtn i {
   color: var(--drack-color);
   font-size: 20px;
   padding: 10px;
@@ -176,41 +201,54 @@ li a{
 }
 .imgsection img {
   width: auto;
+  animation: IMGs 10s infinite;
   height: 350px;
+}
+@keyframes IMGs {
+  0% {
+    transform: translateY(30px);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(30px);
+
+  }
 }
 
 /* About section */
-.aboutsection{
+.aboutsection {
   width: 100%;
   height: 100vh;
-  
+
   background: var(--light-color);
 }
-.aboutsection .aboutText{
+.aboutsection .aboutText {
   text-align: center;
   font-size: 20px;
   color: var(--drack-color);
   padding: 5px;
 }
-.aboutsection .contentSection{
+.aboutsection .contentSection {
   width: 100%;
-  background:var(--light-color);
+  background: var(--light-color);
   height: 90%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
-.contentSection .hereCard{
+.contentSection .hereCard {
   height: 350px;
   width: 450px;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 1px 3px 15px rgb(0, 0, 0, 0.5);
 }
-.hereCard .IMG{
- width: 100%;
+.hereCard .IMG {
+  width: 100%;
 }
-.IMG img{
+.IMG img {
   height: 100px;
   object-fit: fill;
   width: 100px;
@@ -218,17 +256,17 @@ li a{
   border: 2px solid #8e38ff;
   box-shadow: 0 0 15px rgb(0, 0, 0, 0.5);
 }
-.hereCard .BTN{
+.hereCard .BTN {
   width: 100%;
   height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.hereCard .sometext{
+.hereCard .sometext {
   color: var(--font-color);
 }
-.BTN button{
+.BTN button {
   height: 40px;
   width: 80px;
   border: 0;
@@ -236,55 +274,54 @@ li a{
   background: #8e38ff;
   border-radius: 5px;
   color: #fff;
-
 }
-.contentSection .skillSection{
+.contentSection .skillSection {
   height: 350px;
   width: 500px;
   padding: 15px;
   box-shadow: 2px 3px 15px rgb(0, 0, 0, 0.5);
   border-radius: 10px;
 }
-.skillSection .html p{
+.skillSection .html p {
   font-weight: 500;
   margin-top: 10px;
   color: var(--font-color);
 }
-.skillSection .html .show{
+.skillSection .html .show {
   width: 100%;
-  height:8px;
+  height: 8px;
   background: #6d6c6cc0;
   border-radius: 4px;
 }
-.skillSection .html .show .bar{
+.skillSection .html .show .bar {
   position: relative;
 
   height: 8px;
   background: #8e38ff;
   border-radius: 4px;
 }
-.show .html{
+.show .html {
   width: 95%;
 }
-.show .react{
+.show .react {
   width: 80%;
 }
-.show .node{
+.show .node {
   width: 90%;
 }
-.show .tailwendcss{
+.show .tailwendcss {
   width: 70%;
 }
-.show .git{
+.show .git {
   width: 80%;
 }
-.show .mysql{
+.show .mysql {
   width: 85%;
 }
-.show .python{
+.show .python {
   width: 60%;
 }
-.html .show .bar span{
+.html .show .bar span {
   position: absolute;
   right: -14px;
   top: -28px;
@@ -293,35 +330,37 @@ li a{
   color: #fff;
   font-size: 13px;
 }
-.project{
+.project {
   width: 100%;
   height: 100vh;
-
 }
-.project .projectText{
+.project .projectText {
   width: 100%;
   height: 5%;
   color: var(--drack-color);
   text-align: center;
   font-size: 20px;
 }
-.project .showpice{
+.project .showpice {
   width: 100%;
   height: 95%;
   display: flex;
-  
+
   align-items: center;
   justify-content: space-around;
-
 }
-.showpice .numProject ,.happyClient ,.exprience{
+.showpice .numProject,
+.happyClient,
+.exprience {
   width: 300px;
   height: 250px;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 15px rgb(0, 0, 0, 0.5);
 }
-.numProject i, .happyClient i, .exprience i{
+.numProject i,
+.happyClient i,
+.exprience i {
   width: 100%;
   height: 80px;
   display: flex;
@@ -330,8 +369,10 @@ li a{
   color: #8e38ff;
   font-size: 40px;
 }
-.numProject h2, .happyClient h2, .exprience h2{
-    width: 100%;
+.numProject h2,
+.happyClient h2,
+.exprience h2 {
+  width: 100%;
   height: 60px;
   display: flex;
   align-items: center;
@@ -339,8 +380,10 @@ li a{
   color: var(--font-color);
   font-size: 20px;
 }
-.numProject p, .happyClient p, .exprience p{
-    width: 100%;
+.numProject p,
+.happyClient p,
+.exprience p {
+  width: 100%;
   height: 60px;
   display: flex;
   align-items: center;
@@ -348,29 +391,30 @@ li a{
   color: var(--font-color);
   font-size: 14px;
 }
-.contact{
+.contact {
   width: 100%;
   height: 100vh;
   background: var(--light-color);
 }
-.contact .contacText{
+.contact .contacText {
   width: 100%;
   height: 10%;
   text-align: center;
-  
 }
-.contacText h2,p{
+.contacText h2,
+p {
   color: var(--drack-color);
 }
-.outerbox{
+.outerbox {
   height: 90%;
   width: 100%;
-  
+
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
-.outerbox .simplebox, .frombox{
+.outerbox .simplebox,
+.frombox {
   width: 450px;
   height: 400px;
   padding: 3px;
@@ -378,7 +422,7 @@ li a{
   border-radius: 10px;
   box-shadow: 0 0 15px rgb(0, 0, 0, 0.5);
 }
-.simplebox{
+.simplebox {
   display: flex;
   padding: 20px;
   flex-direction: column;
@@ -387,27 +431,28 @@ li a{
   gap: 20px;
   justify-content: center;
 }
-.simplebox h2, p{
+.simplebox h2,
+p {
   color: var(--drack-color);
 }
 
-.frombox .dobleinput{
+.frombox .dobleinput {
   width: 100%;
   height: 60px;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-.dobleinput input{
+.dobleinput input {
   border: 1px solid #8e38ff;
   outline: none;
-   padding: 5px;
-   font-size: 17px;
-   border-radius: 5px;
-   color: var(--drack-color);
-   background: var(--light-color);
+  padding: 5px;
+  font-size: 17px;
+  border-radius: 5px;
+  color: var(--drack-color);
+  background: var(--light-color);
 }
-.frombox .sub{
+.frombox .sub {
   width: 100%;
   padding: 5px;
   border: 1px solid #8e38ff;
@@ -416,7 +461,7 @@ li a{
   color: var(--drack-color);
   background: var(--light-color);
 }
-.frombox textarea{
+.frombox textarea {
   margin-top: 10px;
   padding: 5px;
   border: 1px solid #8e38ff;
@@ -429,14 +474,14 @@ li a{
   color: var(--drack-color);
   background: var(--light-color);
 }
-.frombox .BtN{
+.frombox .BtN {
   width: 100%;
   height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.BtN button{
+.BtN button {
   padding: 7px;
   font-size: 16px;
   outline: none;
