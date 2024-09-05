@@ -1,0 +1,24 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+.section{
+    width: 100%;
+    height: 100vh;
+    background: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.outerdiv{
+    transition: .1s;
+    width: 200px;
+     height: 200px;
+    background: #857777;
+    position: relative;
+    cursor: pointer;
+}
