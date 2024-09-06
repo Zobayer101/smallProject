@@ -1,0 +1,60 @@
+
+.projectSection{
+    width: 100%;
+    height: 200vh;
+    background: #090013;
+    display: flex;
+    z-index: -1;
+}
+.Pborder{
+     transform: translateY(5%);
+    height: 100%;
+    width: 20%;
+    border-right: 1px solid #6000ff;
+}
+.Pborder p{
+    color: #a5a3a3;
+    transform: translate(120%);
+    font-size: 18px;
+}
+.Pborder::before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: #0a0a0a;
+    position: absolute;
+    right: 0;
+   transform: translateX(7.5px);
+   border-radius: 50%;
+   border: 2px solid #6000ff;
+} 
+.projectCon{
+    width: 100%;
+    height: 200%;
+    
+    position: absolute;
+}
+.tiltBox1,.tiltBox2{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    
+}
+.leftBox ,.rightbox{
+    width: 50%;
+    color: #fff;
+    height: 100%;
+    border: 1px solid #6000ff;
+}
+
+
+@media screen and (max-width:700px){
+    .tiltBox1,.tiltBox2{
+        flex-direction: column;
+       
+    }
+    .leftBox ,.rightbox{
+        width: 100%;
+        height: 100%;
+    }
+}
