@@ -5,20 +5,24 @@ const Home = () => {
       <div>
         <div id="home" className="countuner">
           <div className="border">
-                    <PiMouseSimpleThin className="scrollIcon" />
-                    <span className="scrolltext">scroll</span>
+            <a href="#project">
+              <PiMouseSimpleThin className="scrollIcon" />
+            </a>
+            <span className="scrolltext">scroll</span>
+          </div>
+          <div className="mainPropaty">
+            <div className="writer">
+              <div className="writerCard">
+                <div className="startText">Start/&gt;</div>
+                <div className="myname">
+                  Hi, my name is <span>Md Zobayer hosen</span>
                 </div>
-                <div className="mainPropaty">
-                    <div className="writer">
-                        <div className="writerCard">
-                            <div className="startText">Start/&gt;</div>
-                            <div className="myname">Hi, my name is <span>Md Zobayer hosen</span></div>
-                            <div className="writerWrite"> I&#39;m a webdevloper</div>
-                            <p>Let me show you....</p>
-                        </div>
-                    </div>
-                    <div className="IMG"></div>
-                </div>
+                <div className="writerWrite"> I&#39;m a webdevloper</div>
+                <p>Let me show you....</p>
+              </div>
+            </div>
+            <div className="IMG"></div>
+          </div>
         </div>
       </div>
     );

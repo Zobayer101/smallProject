@@ -29,6 +29,11 @@
     position: absolute;
     right: 0;
     transform: translate(13px,300px);
+    transition: .2s;
+}
+.scrollIcon:hover{
+    color: #6000ff;
+    font-size: 27px;
 }
 
 .scrolltext{

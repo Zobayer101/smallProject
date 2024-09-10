@@ -1,60 +1,101 @@
-
-.projectSection{
-    width: 100%;
-    height: 200vh;
-    background: #090013;
-    display: flex;
-    z-index: -1;
+.projectSection {
+  width: 100%;
+  height: 220vh;
+  background: #18131d;
+  display: flex;
+  z-index: -1;
 }
-.Pborder{
-     transform: translateY(5%);
+.Pborder {
+  transform: translateY(5%);
+  height: 100%;
+  width: 20%;
+  border-right: 1px solid #6000ff;
+}
+.Pborder p {
+  color: #a5a3a3;
+  transform: translate(120%);
+  font-size: 18px;
+}
+.Pborder::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #0a0a0a;
+  position: absolute;
+  right: 0;
+  transform: translateX(7.5px);
+  border-radius: 50%;
+  border: 2px solid #6000ff;
+}
+.projectCon {
+  width: 100%;
+  height: 200%;
+
+  position: absolute;
+}
+.tiltBox1,
+.tiltBox2 {
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+.leftBox,
+.rightbox {
+  /* border: 2px solid #6000ff; */
+  width: 50%;
+  color: #fff;
+  height: 100%;
+  perspective: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.leftBox {
+  margin-top: 100px;
+}
+.leftBox div,
+.rightbox div {
+  border: 0;
+  width: 350px;
+  height: auto;
+  transition: .1s;
+ 
+}
+.leftBox div:hover,
+.rightbox div:hover{
+  box-shadow: 0 0 30px 5px #000000;
+}
+.leftBox img,
+.rightbox img {
+  position: relative;
+  border: 0;
+  width: 350px;
+}
+
+/* .IMG1{
+    padding-top:20px ;
+} */
+
+@media screen and (max-width: 700px) {
+  .tiltBox1,
+  .tiltBox2 {
+    flex-direction: column;
+  }
+  .leftBox,
+  .rightbox {
+    margin-top: 0px;
+
+    width: 100%;
     height: 100%;
-    width: 20%;
-    border-right: 1px solid #6000ff;
-}
-.Pborder p{
-    color: #a5a3a3;
-    transform: translate(120%);
-    font-size: 18px;
-}
-.Pborder::before{
-    content: '';
-    width: 10px;
-    height: 10px;
-    background: #0a0a0a;
-    position: absolute;
-    right: 0;
-   transform: translateX(7.5px);
-   border-radius: 50%;
-   border: 2px solid #6000ff;
-} 
-.projectCon{
-    width: 100%;
-    height: 200%;
-    
-    position: absolute;
-}
-.tiltBox1,.tiltBox2{
-    width: 100%;
-    height: 50%;
-    display: flex;
-    
-}
-.leftBox ,.rightbox{
-    width: 50%;
-    color: #fff;
-    height: 100%;
-    border: 1px solid #6000ff;
-}
-
-
-@media screen and (max-width:700px){
-    .tiltBox1,.tiltBox2{
-        flex-direction: column;
-       
-    }
-    .leftBox ,.rightbox{
-        width: 100%;
-        height: 100%;
-    }
+  }
+  .leftBox div,
+  .rightbox div {
+    width: 250px;
+  }
+  .leftBox img,
+  .rightbox img {
+    border: 0;
+    width: 250px;
+  }
 }

@@ -13,7 +13,7 @@
     justify-content: center;
     cursor: none;
     /* transform-style: preserve-3d; */
-    perspective: 1500px;
+    perspective: 500px;
 }
 .outerMous{
      pointer-events: none;
@@ -40,5 +40,5 @@
     background: #6a8b88b7;
     border-radius: 10px;
     transition: .1s;
-    /* transform: rotateX(20deg) rotateY(40deg); */
+    transform: rotateX(10deg) rotateY(-10deg);
 }

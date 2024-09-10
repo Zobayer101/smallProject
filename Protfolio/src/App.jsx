@@ -1,4 +1,5 @@
 
+import About from './components/About'
 import Home from './components/Home'
 import Mouse from './components/Mouse'
 import Navebar from './components/navebar'
@@ -11,7 +12,8 @@ function App() {
       <Mouse/>
       <Navebar />
       <Home />
-      <Project/>
+      <Project />
+      <About/>
     </>
   )
 }

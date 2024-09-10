@@ -2,7 +2,7 @@ import { useState } from "react";
 import "../CSS/Navebar.css";
 import { HiBars3CenterLeft } from "react-icons/hi2";
 const Navebar = () => {
-  const [icon, setIcon] = useState(false);
+  const [icon, setIcon] = useState(true);
  
   return (
     <div>
@@ -13,7 +13,7 @@ const Navebar = () => {
         <div className={icon ? "section" : "section showBar"}>
           <a href="#home">Start/&gt;</a>
           <a href="#project">Project/&gt;</a>
-          <a href="#">About/&gt;</a>
+          <a href="#about">About/&gt;</a>
           <a href="#">Contact/&gt;</a>
         </div>
         <div className="icon" onClick={() => setIcon((icon) => !icon)}>
