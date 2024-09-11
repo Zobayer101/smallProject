@@ -14,7 +14,7 @@ const Navebar = () => {
           <a href="#home">Start/&gt;</a>
           <a href="#project">Project/&gt;</a>
           <a href="#about">About/&gt;</a>
-          <a href="#">Contact/&gt;</a>
+          <a href="#contact">Contact/&gt;</a>
         </div>
         <div className="icon" onClick={() => setIcon((icon) => !icon)}>
           <HiBars3CenterLeft />

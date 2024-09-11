@@ -1,5 +1,6 @@
 
 import About from './components/About'
+import Contact from './components/Contact'
 import Home from './components/Home'
 import Mouse from './components/Mouse'
 import Navebar from './components/navebar'
@@ -13,7 +14,8 @@ function App() {
       <Navebar />
       <Home />
       <Project />
-      <About/>
+      <About />
+      <Contact/>
     </>
   )
 }
