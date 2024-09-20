@@ -1,10 +1,10 @@
 
-import { useEffect, useRef } from "react";
+import { useContext, useEffect } from "react";
 import "../CSS/Mouse.css";
-
+import { Dalivar } from "../App";
 const Mouse = () => {
-    let move = useRef();
-    let Ring = useRef();
+  const { move,Ring} = useContext(Dalivar);
+    
     useEffect(() => {
         window.addEventListener('mousemove', (e) => {
             let X = e.clientX;
@@ -19,7 +19,7 @@ const Mouse = () => {
                 { duration: 1000, fill: "forwards" }
             )
         })
-    }, []);
+    }, [move,Ring]);
     return (
       <div>
         <div  ref={Ring} className="outerRing">

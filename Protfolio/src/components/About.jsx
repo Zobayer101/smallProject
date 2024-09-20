@@ -85,7 +85,7 @@ const About = () => {
           <span className="numbers">10</span>
           <div className="contents">
             <span className="keyWord">return </span>
-            <span className="Bracket">&#0; &#91;</span>
+            <span className="Bracket">&#123; &#91;</span>
           </div>
         </div>
         <div className="lineNo">
@@ -93,7 +93,7 @@ const About = () => {
           <div className="contents">
             <span className="Bracket ">&#123;</span>
             <span className="strings"> &#39; 2020-2023 &#39;</span>
-            <span className="Bracket"> &#0; &#58; &#0; </span>
+            <span className="Bracket">  &#58;  </span>
             <span className="strings">
               {" "}
               &#39; Full-stack web Developer&#39;
@@ -106,7 +106,7 @@ const About = () => {
           <div className="contents">
             <span className="Bracket ">&#123;</span>
             <span className="strings"> &#39; Now &#39;</span>
-            <span className="Bracket"> &#0; &#58; &#0; </span>
+            <span className="Bracket">  &#58; </span>
             <span className="strings"> &#39; Mobile Developer&#39;</span>
             <span className="Bracket">&#125;</span>
           </div>
@@ -133,8 +133,8 @@ const About = () => {
         <div className="lineNo">
           <span className="numbers">16</span>
           <div className="contents">
-            <span className="keyWord">return</span>
-            <span className="Bracket"> &#0; &#91;</span>
+            <span className="keyWord">return </span>
+            <span className="Bracket"> &#123; &#91;</span>
           </div>
         </div>
         <div className="lineNo">
@@ -185,8 +185,8 @@ const About = () => {
         <div className="lineNo">
           <span className="numbers">22</span>
           <div className="contents">
-            <span className="keyWord">return</span>
-            <span className="Bracket"> &#0; &#91; </span>
+            <span className="keyWord">return </span>
+            <span className="Bracket"> &#123; &#91; </span>
           </div>
         </div>
         <div className="lineNo">

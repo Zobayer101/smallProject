@@ -2,7 +2,7 @@
 .navebar{
     width: 100%;
     background: #03000371;
-    height: 80px;
+    height: 70px;
     display: flex;
     padding: 0 10px 0 10px;
     align-items: center;
@@ -11,6 +11,10 @@
     z-index: 11;
     position: fixed;
     top: 0;
+    
+}
+.navebar.Hide{
+    transform: translateY(-100px);
 }
  .logo{
     font-weight: 600;

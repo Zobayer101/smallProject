@@ -1,6 +1,7 @@
 
 import '../CSS/Project.css';
 import Tilt from './Tilt';
+
 const Project = () => {
 
 
@@ -19,6 +20,7 @@ const Project = () => {
                   className="img"
                 />
                 <Tilt
+                 
                   img="../../public/screenshot/Screenshot (31).png"
                   className="img"
                 />
@@ -54,8 +56,6 @@ const Project = () => {
                   img="../../public/screenshot/Screenshot (23).png"
                   className="img"
                 />
-
-                
               </div>
             </div>
           </div>

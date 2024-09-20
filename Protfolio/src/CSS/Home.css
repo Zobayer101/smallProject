@@ -82,11 +82,22 @@
 
 .myname span{
     color: #6000ff;
+    font-weight: 700;
 }
 .writerWrite{
     color: #fffefe;
     padding: 0px 0 20px 20px;
     font-size: 30px;
+}
+.writerWrite span{
+    font-family: serif;
+    font-style: italic;
+    font-weight: 200;
+}
+.writerWrite .dev{
+    font-weight: 500;
+    font-style: normal;
+    font-family: serif;
 }
 .writerCard p{
     color: #6d6b6b;

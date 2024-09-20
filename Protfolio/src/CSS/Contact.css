@@ -3,6 +3,7 @@
   height: 100vh;
   background: #18131d;
   display: flex;
+  overflow: hidden;
 }
 .mainSectionF {
   display: flex;
