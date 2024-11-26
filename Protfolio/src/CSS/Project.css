@@ -1,6 +1,6 @@
 .projectSection {
   width: 100%;
-  height: 220vh;
+  height: 230vh;
   background: #18131d;
   display: flex;
   z-index: 1;
@@ -31,7 +31,7 @@
 .projectCon {
   width: 100%;
   height: 200%;
- z-index: 5;
+  z-index: 5;
   position: absolute;
 }
 .tiltBox1,
@@ -39,7 +39,6 @@
   width: 100%;
   height: 50%;
   display: flex;
-  
 }
 .leftBox,
 .rightbox {
@@ -61,20 +60,17 @@
   border: 0;
   width: 350px;
   height: auto;
-  transition: .1s;
- 
+  transition: 0.1s;
 }
 .leftBox div:hover,
-.rightbox div:hover{
+.rightbox div:hover {
   box-shadow: 10px 10px 60px 2px #050505;
-  
 }
 .leftBox img,
 .rightbox img {
   position: relative;
   border: 0;
   width: 350px;
-  
 }
 
 /* .IMG1{
@@ -82,24 +78,33 @@
 } */
 
 @media screen and (max-width: 700px) {
+  .projectSection {
+    height: 300vh;
+  }
   .tiltBox1,
   .tiltBox2 {
     flex-direction: column;
   }
   .leftBox,
   .rightbox {
-    margin-top: 0px;
-
     width: 100%;
     height: 100%;
+    /* margin-top: 30px; */
   }
   .leftBox div,
   .rightbox div {
+    /* margin-top: 30px; */
+
     width: 250px;
   }
   .leftBox img,
   .rightbox img {
     border: 0;
     width: 250px;
+    /* margin: 20px 0 20px 0; */
+  }
+
+  .leftBox {
+    margin-top: 200px;
   }
 }

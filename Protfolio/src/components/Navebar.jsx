@@ -17,7 +17,10 @@ const Navebar = () => {
         >
           <span>&lt;</span>Zobayer<span>/&gt;</span>
         </div>
-        <div className={icon ? "section" : "section showBar"}>
+        <div
+          className={icon ? "section" : "section showBar"}
+          onClick={() => setIcon(true)}
+        >
           <a
             onMouseOver={() => MouseIN(Ring)}
             onMouseLeave={() => MouseOut(Ring)}

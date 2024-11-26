@@ -93,7 +93,7 @@ const About = () => {
           <div className="contents">
             <span className="Bracket ">&#123;</span>
             <span className="strings"> &#39; 2020-2023 &#39;</span>
-            <span className="Bracket">  &#58;  </span>
+            <span className="Bracket"> &#58; </span>
             <span className="strings">
               {" "}
               &#39; Full-stack web Developer&#39;
@@ -106,7 +106,7 @@ const About = () => {
           <div className="contents">
             <span className="Bracket ">&#123;</span>
             <span className="strings"> &#39; Now &#39;</span>
-            <span className="Bracket">  &#58; </span>
+            <span className="Bracket"> &#58; </span>
             <span className="strings"> &#39; Mobile Developer&#39;</span>
             <span className="Bracket">&#125;</span>
           </div>
@@ -195,12 +195,12 @@ const About = () => {
             <span className="Bracket">&#123; </span>
             <span className="strings">
               {" "}
-              &#39; HTML/CSS/JS &#39; , &#39; React.js &#39; , &#39; Next.js
-              &#39; , &#39; Tailwindcss &#39; , &#39;SASS&#39; , &#39;
-              TypeScript &#39; , &#39; Node.js &#39; , &#39; Express.js &#39; ,
-              &#39; MongoDB &#39; , &#39; SQL &#39; , &#39; git/gitHub &#39; ,
-              &#39; Socket.io&#39; , &#39; EJS &#39; , &#39; NodeMailer &#39; ,
-              &#39; Sharp &#39; , &#39; C/C++ &#39;
+              &#39; HTML/CSS/JS &#39; , &#39; React.js &#39; , &#39; ReactNative
+              &#39;, &#39; Next.js &#39; , &#39; Tailwindcss &#39; ,
+              &#39;SASS&#39; , &#39; TypeScript &#39; , &#39; Node.js &#39; ,
+              &#39; Express.js &#39; , &#39; MongoDB &#39; , &#39; SQL &#39; ,
+              &#39; git/gitHub &#39; , &#39; Socket.io&#39; , &#39; EJS &#39; ,
+              &#39; NodeMailer &#39; , &#39; Sharp &#39; , &#39; C/C++ &#39;
             </span>
           </div>
         </div>
