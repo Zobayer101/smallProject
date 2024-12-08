@@ -1,12 +1,12 @@
-
 import "../CSS/Contact.css";
 import { ImGithub } from "react-icons/im";
 import { FaLinkedin } from "react-icons/fa";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaSquareInstagram } from "react-icons/fa6";
+import { FaDownload } from "react-icons/fa";
 import { Dalivar } from "../App";
 import { useContext } from "react";
-import { MouseIN,MouseOut } from "../lib/Over";
+import { MouseIN, MouseOut } from "../lib/Over";
 export default function Contact() {
   const { Ring } = useContext(Dalivar);
   return (
@@ -59,11 +59,13 @@ export default function Contact() {
             onMouseOver={() => MouseIN(Ring)}
             onMouseLeave={() => MouseOut(Ring)}
           >
-            Get In Touch
+            <a href="/src/assets/mdzobayer.pdf" download={true}>
+             
+            Resume <FaDownload />
+            </a>
           </button>
         </div>
       </div>
     </div>
   );
 }
-

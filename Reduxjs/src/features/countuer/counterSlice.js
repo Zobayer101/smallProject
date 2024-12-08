@@ -14,11 +14,11 @@ const counterSlice = createSlice({
          Dicremant: (state) => {
             state.counter1-=5;
         },
-        Incremant2: (state) => {
-            state.counter2++;
+        Incremant2: (state,action) => {
+            state.counter2+=action.payload.value;
         },
-        Dicremant2: (state) => {
-            state.counter2--;
+        Dicremant2: (state,action) => {
+            state.counter2-=action.payload.value;
         },
        
 

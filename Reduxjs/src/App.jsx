@@ -33,9 +33,10 @@ export default function App() {
       <div>
         {/* <Dalivar.Provider value={{state,dispach}}> */}
           <CounterOne />
+          
           <CounterTow />
         <TotalCount />
-        <Post/>
+        {/* <Post/> */}
         {/* </Dalivar.Provider> */}
       </div>
     </>

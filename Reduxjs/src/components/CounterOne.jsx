@@ -8,10 +8,17 @@ export default function CounterOne() {
   return (
     <div>
       <h2>{Counter.counter2}</h2>
-      <button onClick={() => dispach(Incremant2())}>
+      <button onClick={() => dispach(Incremant2({value:2}))}>
         Incremat
       </button>
-      <button onClick={() => dispach(Dicremant2())}>
+      <button onClick={() => dispach(Dicremant2({value:2}))}>
+        Dicremant
+      </button>
+      <h2>{Counter.counter2}</h2>
+      <button onClick={() => dispach(Incremant2({value:10}))}>
+        Incremat
+      </button>
+      <button onClick={() => dispach(Dicremant2({value:10}))}>
         Dicremant
       </button>
     </div>
