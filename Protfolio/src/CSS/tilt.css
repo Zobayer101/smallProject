@@ -7,6 +7,8 @@
 }
 .TiltDiv img {
   position: relative;
+  height: 200px;
+  object-fit: scale-down;
 }
 .TiltDiv h1 {
   z-index: 100;
@@ -14,4 +16,3 @@
   transform: translate3d(-50px, 50px, 30px);
   /* text-shadow: 2px 3px 5px  rgb(92, 88, 88); */
 }
-

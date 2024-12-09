@@ -18,7 +18,7 @@ export default function Contact() {
         <div className="textSections">Find me on:</div>
         <div className="contentsSection">
           <div className="LinkText">
-            <a href="#">
+            <a href="https://github.com/Zobayer101">
               <ImGithub
                 onMouseOver={() => MouseIN(Ring)}
                 onMouseLeave={() => MouseOut(Ring)}
@@ -36,7 +36,7 @@ export default function Contact() {
             </a>
           </div>
           <div className="LinkText">
-            <a href="#">
+            <a href="https://web.facebook.com/mdzobayerhosen.habib">
               <FaFacebookSquare
                 onMouseOver={() => MouseIN(Ring)}
                 onMouseLeave={() => MouseOut(Ring)}
@@ -45,7 +45,7 @@ export default function Contact() {
             </a>
           </div>
           <div className="LinkText">
-            <a href="#">
+            <a href="https://www.instagram.com/mdzobayerhossenhabib/">
               <FaSquareInstagram
                 onMouseOver={() => MouseIN(Ring)}
                 onMouseLeave={() => MouseOut(Ring)}
@@ -60,8 +60,7 @@ export default function Contact() {
             onMouseLeave={() => MouseOut(Ring)}
           >
             <a href="/src/assets/mdzobayer.pdf" download={true}>
-             
-            Resume <FaDownload />
+              Resume <FaDownload />
             </a>
           </button>
         </div>

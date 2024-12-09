@@ -18,7 +18,7 @@ const Home = () => {
     "Fontend",
     "Backend",
     "android",
-    "ISO",
+    "IOS",
     "FullStack",
   ];
 
@@ -79,7 +79,6 @@ const Home = () => {
   //   };
   // }, [index, text]);
 
-  console.log(currentText);
   return (
     <div>
       <div id="home" className="countuner">
