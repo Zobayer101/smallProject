@@ -6,8 +6,8 @@
   border: 1px solid #fff;
   z-index: 99;
   mix-blend-mode: difference;
-  transition: .4s;
-  
+  transition: 0.4s;
+
   border-radius: 50%;
 }
 .innerDot {
@@ -19,5 +19,12 @@
   border-radius: 50%;
   z-index: 100;
   mix-blend-mode: difference;
-  
+}
+@media screen and (max-width: 600px) {
+  .outerRing {
+    display: none;
+  }
+  .innerDot {
+    display: none;
+  }
 }
